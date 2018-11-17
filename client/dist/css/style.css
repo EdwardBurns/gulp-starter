@@ -1,0 +1,8 @@
+body {
+  background-color: #ce4523;
+  color: #c8ff00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid gray;
+}

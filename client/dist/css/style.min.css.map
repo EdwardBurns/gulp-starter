@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAIA,KACI,sBACA,UACA,oBAAA,AACA,oBADA,AACA,aAAA,qBAAsB,CACzB","file":"style.min.css","sourcesContent":["@import \"base/variables\";\n\n// http://sass-lang.com/guide\n\nbody {\n    background-color: $bg;\n    color: $red;\n    display: flex;\n    border: 1px solid gray;\n}\n"]}

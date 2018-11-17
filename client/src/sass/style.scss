@@ -1,0 +1,10 @@
+@import "base/variables";
+
+// http://sass-lang.com/guide
+
+body {
+    background-color: $bg;
+    color: $red;
+    display: flex;
+    border: 1px solid gray;
+}
