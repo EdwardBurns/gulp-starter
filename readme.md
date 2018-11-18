@@ -90,7 +90,7 @@ npm ls
 npm ls --depth=0
 
 # list installed modules with dependencies
-npm ls --depth=0
+npm ls --depth=1
 
 # print additional package information while listing modules
 npm ll or npm la
@@ -149,7 +149,7 @@ gulp browserSync
 // General & wordier
 .on('error', function (err) { console.log( err.toString() ); this.emit('end'); })
 
-// Sass specifi & shorter
+// Sass specific & shorter
 .on( 'error', sass.logError )
 
  ```
@@ -183,14 +183,17 @@ browserify({ entries: jsPaths.src, debug: true })
     .transform( babelify, { presets: ["@babel/preset-env"] })
     .bundle()
 
+// ---------------------------------------
+// Alternative
 // If using presets in package.json or .babelrc then this would suffice
+// ---------------------------------------
 browserify({ entries: jsPaths.src, debug: true })
         .transform( babelify )
         .bundle()
 
 ```
 
-#### Use in package.json
+#### Or use in package.json
 
 ```json
 
@@ -208,7 +211,7 @@ browserify({ entries: jsPaths.src, debug: true })
 
 ```
 
-#### Use in .babelrc
+#### Or use in .babelrc
 
 ```json
 
@@ -248,31 +251,6 @@ function watchme( cb ) {
 
   cb();
 }
-
-```
-
----
-
-## Git
-
----
-
-```bash
-
-# Repository Link
-# https://github.com/EdwardBurns/gulp-starter.git
-
-# …or create a new repository on the command line
-echo "# gulp-starter" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/EdwardBurns/gulp-starter.git
-git push -u origin master
-
-# …or push an existing repository from the command line
-git remote add origin https://github.com/EdwardBurns/gulp-starter.git
-git push -u origin master
 
 ```
 
