@@ -45,7 +45,6 @@ const imgPaths = {
   dest : './client/dist/images/'
 }
 
-// sass, prefixers, compression, sourcemaps
 function style (cb ) {
 
   switch ( dev_env ) {
